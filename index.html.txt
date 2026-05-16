@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz App</title>
+</head>
+<body>
+    <h2>Diff tenglama quiz</h2>
+
+    <p id="q">dy/dx = 2x</p>
+
+    <button onclick="check(0)">y = x^2 + C</button><br>
+    <button onclick="check(1)">y = 2x + C</button><br>
+    <button onclick="check(2)">y = x + C</button><br>
+    <button onclick="check(3)">y = x^3 + C</button><br>
+
+    <p id="res"></p>
+
+    <script>
+        function check(i){
+            if(i === 0){
+                document.getElementById("res").innerText = "✅ To'g'ri!";
+            } else {
+                document.getElementById("res").innerText = "❌ Noto'g'ri!";
+            }
+        }
+    </script>
+</body>
+</html>
